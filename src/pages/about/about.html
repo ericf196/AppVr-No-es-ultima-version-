@@ -1,11 +1,9 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let videoC of videosCirculares">
+    <img id="img-star-{{videoC.id}}" (click)="favorite(videoC); addSrc(videoC)" class="img-star"
+         src="{{addSrc(videoC)}}"/>
+    <img src="{{videoC.image}}"/>
+    <div class="card-title">{{videoC.title}}</div>
+    <div class="card-subtitle">{{videoC.subTitle}}</div>
+  </ion-card>
 </ion-content>
