@@ -17,6 +17,7 @@ import {TransactionAppDB} from '../database';
 import {FavoritePage} from "../pages/favorite/favorite";
 import { FileTransfer } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
+import {TestPage} from "../pages/test/test";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { File } from '@ionic-native/file';
     HomePage,
     TabsPage,
     FavoritePage,
+    TestPage,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { File } from '@ionic-native/file';
     HomePage,
     TabsPage,
     FavoritePage,
+    TestPage
   ],
   providers: [
     StatusBar,
